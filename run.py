@@ -97,11 +97,11 @@ if __name__ == '__main__':
     	    if is_on != False:
                 shutdown_all(config,switch)
                 on_all(config,switch,is_on)
-            fo = open("log.txt", "a")
-            fo.write(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())+\
-            '    UP:'+is_on['down_group']+\
-            '    Down:' + is_on['on_group']+ "\n")
-            fo.close()
+            	fo = open("log.txt", "a")
+            	fo.write(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())+\
+            	'    UP:'+is_on['down_group']+\
+            	'    Down:' + is_on['on_group']+ "\n")
+            	fo.close()
             time.sleep(10)
             #print 'end.....'
             ping.del_err()
