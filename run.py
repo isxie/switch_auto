@@ -102,6 +102,8 @@ if __name__ == '__main__':
             	'    UP:'+is_on['down_group']+\
             	'    Down:' + is_on['on_group']+ "\n")
             	fo.close()
+            else:
+            	print 'Not be performed'
             time.sleep(10)
             #print 'end.....'
             ping.del_err()
